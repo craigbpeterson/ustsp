@@ -1,0 +1,310 @@
+/* ======================== */
+/* UPS Sort Practice Styles */
+/* ======================== */
+
+html {
+    background-color: #ccc;
+    font-family:sans-serif;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color:#fff;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px #4e2700 solid;
+    padding: 1rem 0 1rem;
+}
+
+header div#logo {
+    display:inline-block;
+}
+
+header div#logo img {
+    width:80px;
+}
+
+header div#heading {
+    display:inline-block;
+    text-align:left;
+    vertical-align: top;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+header div#heading h1 {
+    margin: 0;
+}
+
+header div#heading h2 {
+    margin: 0;
+}
+
+section {
+    text-align:center;
+    padding: 2rem 0 1rem;
+}
+
+section p.prompt {
+    font-size:2rem;
+    margin-bottom: 0;
+}
+
+section p.zip {
+    display:inline-block;
+    padding: 1rem;
+    border: 10px #4e2700 solid;
+    border-radius: 10px;
+    font-size: 2rem;
+    margin: 1rem 1rem 1.5rem;
+}
+
+section form div.buttoncontainer {
+    display:inline-block;
+}
+
+section form button.red {
+    font-size: 1.1rem;
+    background: #ff5454;
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+section form button.yellow {
+    font-size: 1.1rem;
+    background: #fff900;
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+section form button.green {
+    font-size: 1.1rem;
+    background: #0bca00;
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+section form button.orange {
+    font-size: 1.1rem;
+    background: #ff6c00;
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+section form button.purple {
+    font-size: 1.1rem;
+    background: #c83fff;
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+section form button.brown {
+    font-size: 1.1rem;
+    background: #a06437;
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+section p.correct {
+    display: table;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    border: 5px #006100 solid;
+    background: #00cc00;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+section p.incorrect {
+    display: table;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 5px #610000 solid;
+    background: #ff7c7c;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+section p.youranswer {
+    margin-top:0.2rem;
+    color:red;
+}
+
+section p.correctanswer {
+    margin: 2rem 0 0;
+    font-weight: bold;
+}
+
+section div.answercontainer {
+    display: inline-block;
+    text-align:center;
+    margin:0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 5px #666 solid;
+    border-radius: 10px;
+}
+
+section div.answer {
+    display:inline-block;
+}
+
+section div.answerarrow {
+    display:inline-block;
+    padding: 0 1rem;
+}
+
+section div.answerarrowmobile {
+    display:none;
+}
+
+section div.redanswer {
+    display:inline-block;
+    background: #d80000;
+    color: white;
+    padding: 3px 10px 5px;
+    border-radius: 8px;
+}
+
+section div.yellowanswer {
+    display:inline-block;
+    background: #ffff00;
+    color: #000;
+    padding: 3px 10px 5px;
+    border-radius: 8px;
+}
+
+section div.greenanswer {
+    display:inline-block;
+    background: #007d00;
+    color: #fff;
+    padding: 3px 10px 5px;
+    border-radius: 8px;
+}
+
+section div.orangeanswer {
+    display:inline-block;
+    background: orange;
+    color: #000;
+    padding: 3px 10px 5px;
+    border-radius: 8px;
+}
+
+section div.purpleanswer {
+    display:inline-block;
+    background: #8200ab;
+    color: #fff;
+    padding: 3px 10px 5px;
+    border-radius: 8px;
+}
+
+section div.brownanswer {
+    display:inline-block;
+    background: #904027;
+    color: #fff;
+    padding: 3px 10px 5px;
+    border-radius: 8px;
+}
+
+section div.tryagaincontainer {
+    text-align:center;
+    margin-top: 3rem;
+}
+
+section div.tryagaincontainer p.tryagain {
+    display:inline-block;
+    margin: 0;
+    padding: 0.5em;
+    border: 2px #808080 solid;
+    border-radius: 10px;
+    background: #ececec;
+}
+
+section div.tryagaincontainer a {
+    color:black;
+    text-decoration:none;
+}
+
+footer {
+    margin: 4rem auto 0;
+    padding: 1rem;
+    background: #4e2700;
+    color: #fff;
+    text-align: right;
+}
+
+footer p {
+    margin:0;
+    font-size: 0.7rem;
+}
+
+
+/* ============= */
+/* MEDIA QUERIES */
+/* ============= */
+
+/* == PHONE == */
+@media all and (max-width:480px){
+    section {
+        padding: 1.5rem 0 1rem;
+    }
+    
+    header {
+        padding: 0.5rem 0 0.5rem;
+    }
+    
+    header div#logo img {
+        width:40px;
+    }
+    
+    header div#heading h1 {
+        font-size:1.3rem;
+    }
+    
+    header div#heading h2 {
+        font-size:1rem;
+    }
+    
+    section p.prompt {
+        margin-top: 0;
+        font-size: 1.3rem;
+    }
+    
+    section p.zip {
+        border: 5px #4e2700 solid;
+        font-size: 1.7rem;
+        
+    }
+    
+    section form div.buttoncontainer button {
+        margin-bottom:1rem;
+        margin: 1rem 0 0;
+    }
+    
+    section p.correctanswer {
+        
+    }
+    
+    section div.answer,
+    section div.answerarrowmobile,
+    section div.youranswer {
+        display:block;
+    }
+    
+    section div.answerarrow {
+        display:none;
+    }
+    
+    section div.tryagaincontainer {
+        margin-top: 1.5rem;
+    }
+}
