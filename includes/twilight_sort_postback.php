@@ -19,7 +19,6 @@ function showResult()
     global $green_belt;
     global $orange_belt;
     global $purple_belt;
-    global $brown_belt;
     
     //get data from form
     $correct_belt = $_POST['correctBelt'];
@@ -39,7 +38,7 @@ function showResult()
     if ($response === $correct_belt)
     {
         $html = '
-        <p class="correct">CORRECT!</p>
+        <p class="correct"><i class="fas fa-check"></i><br />CORRECT!</p>
         <div class="answercontainer">
             <div class="answer">' . $zip . '</div>
             <div class="answerarrow"> <i class="fas fa-arrow-right"></i> </div>
@@ -52,7 +51,7 @@ function showResult()
         ';
     } else {
         $html = '
-        <p class="incorrect">Incorrect.</p>
+        <p class="incorrect"><i class="fas fa-times"></i><br />Incorrect.</p>
         <p class="youranswer">Your answer: ' . $response_output . '</p>
         <p class="correctanswer">Correct answer:</p>
         <div class="answercontainer">
@@ -78,13 +77,12 @@ function showForm()
     global $green_belt;
     global $orange_belt;
     global $purple_belt;
-    global $brown_belt;
     
     //initiate variables
     $correct_belt = '';
     $zip = '';
     
-    $random = rand(1,6);
+    $random = rand(1,5);
     
     switch($random)
     {
@@ -113,10 +111,6 @@ function showForm()
             $zip = $purple_belt[rand(0, (count($purple_belt)) - 1)];
             break;
             
-        case 6:
-            $correct_belt = 'brown';
-            $zip = $brown_belt[rand(0, (count($brown_belt)) - 1)];
-            break;
     }//end switch
     
     //start the html <form> output:
@@ -136,7 +130,6 @@ function showForm()
         <div class="buttoncontainer">
             <button type="submit" name="answer" value="orange" class="orange">Orange</button>
             <button type="submit" name="answer" value="purple" class="purple">Purple</button>
-            <button type="submit" name="answer" value="brown" class="brown">Brown</button>
         </div>
     </form>
     ';
