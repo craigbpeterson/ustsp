@@ -118,6 +118,7 @@ section p.correct {
     display: table;
     margin: 0 auto 2rem;
     padding: 1rem;
+    padding-top:0.5rem;
     border: 5px #006100 solid;
     background: #00cc00;
     font-size: 1.5rem;
@@ -128,10 +129,17 @@ section p.incorrect {
     display: table;
     margin: 0 auto;
     padding: 1rem;
+    padding-top:0.5rem;
     border: 5px #610000 solid;
     background: #ff7c7c;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+section p.correct i.fa-check,
+section p.incorrect i.fa-times {
+    color: #fff;
+    font-size: 4rem;
 }
 
 section p.youranswer {
@@ -142,6 +150,7 @@ section p.youranswer {
 section p.correctanswer {
     margin: 2rem 0 0;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 section div.answercontainer {
