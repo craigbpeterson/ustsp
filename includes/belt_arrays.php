@@ -129,7 +129,6 @@ $orange_belt = array(
     'BAG 9929P',
     'BAG 9929D',
     'BAG 9850P',
-    
 );
 
 $purple_belt = array(
